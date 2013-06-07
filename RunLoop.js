@@ -2,9 +2,10 @@
     if (typeof define === 'function' && define.amd) {
         define([], factory);
     } else {
-        root.RunLoop = factory(root);
+        root.RunLoop = factory();
     }
 }(this, function () {
+  
     var RunLoop = function(context, callback, options) {
 
       var tick = options.tick || 0;
