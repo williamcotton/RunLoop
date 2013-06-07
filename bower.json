@@ -1,5 +1,5 @@
 {
-	"name": "runloop",
+	"name": "RunLoop",
 	"version": "0.1",
-	"main": "runloop.js"
+	"main": "RunLoop.js"
 }
