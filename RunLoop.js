@@ -1,3 +1,18 @@
+// requestAnimationFrame polyfill
+window.requestAnimationFrame = (function(callback) {
+  return window.requestAnimationFrame || 
+  window.webkitRequestAnimationFrame || 
+  window.mozRequestAnimationFrame || 
+  window.oRequestAnimationFrame || 
+  window.msRequestAnimationFrame ||
+  function(callback) {
+    window.setTimeout(function() {
+      var timestamp = Date.now();
+      callback(timestamp);
+    }, 1000 / 60);
+  };
+})();
+
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
         define([], factory);
