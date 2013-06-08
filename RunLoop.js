@@ -21,7 +21,20 @@ window.requestAnimationFrame = (function(callback) {
     }
 }(this, function () {
   
-    var RunLoop = function(context, callback) {
+    var RunLoop = function(context_or_canvas, callback) {
+      
+      var context;
+      if (typeof(context_or_canvas)) {
+        var canvas = context_or_canvas;
+        context = canvas.getContext('2d');
+        var width = canvas.offsetWidth;
+        var height = canvas.offsetHeight;
+        context.width = width;
+        context.height = height;
+      }
+      else {
+        context = context_or_canvas;
+      }
 
       var tick = 0;
       var tickscale = 1;
