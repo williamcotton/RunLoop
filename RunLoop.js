@@ -23,6 +23,10 @@ window.requestAnimationFrame = (function(callback) {
   
     var RunLoop = function(context, callback) {
 
+      var tick = 0;
+      var tickscale = 1;
+      var paused = false;
+
       var scheduledEvents = [];
 
       /* -- Out raison d'être... -- */
