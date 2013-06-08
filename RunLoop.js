@@ -21,11 +21,7 @@ window.requestAnimationFrame = (function(callback) {
     }
 }(this, function () {
   
-    var RunLoop = function(context, callback, options) {
-
-      var tick = options.tick || 0;
-      var tickscale = options.tickscale || 1;
-      var paused = options.paused || false;
+    var RunLoop = function(context, callback) {
 
       var scheduledEvents = [];
 
