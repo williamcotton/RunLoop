@@ -24,7 +24,7 @@ window.requestAnimationFrame = (function(callback) {
     var RunLoop = function(context_or_canvas, callback) {
       
       var context;
-      if (typeof(context_or_canvas)) {
+      if (typeof(context_or_canvas.getContext('2d'))) {
         var canvas = context_or_canvas;
         context = canvas.getContext('2d');
         var width = canvas.offsetWidth;
