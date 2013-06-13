@@ -1,11 +1,11 @@
 {
-  'name': 'RunLoop',
-  'version': '0.8.0',
-  'devDependencies': {
-    'karma': '*',
-    'phantomjs': '*'
+  "name": "RunLoop",
+  "version": "0.8.0",
+  "devDependencies": {
+    "karma": "*",
+    "phantomjs": "*"
   },
-  'scripts': {
-     'test': './node_modules/.bin/karma start --single-run --browsers PhantomJS'
+  "scripts": {
+     "test": "./node_modules/.bin/karma start --single-run --browsers PhantomJS"
   }
 }
