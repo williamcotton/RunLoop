@@ -167,8 +167,28 @@ define(["RunLoop"], function(RunLoop) {
           didItHappen++;
         }, 50);
         runLoopInstance.step(100);
-        
         expect(didItHappen).toBe(2);
+      });
+      
+    });
+    
+    it("should play and then something should happen", function() {
+      
+      var didItHappen;
+      
+      runs(function() {
+        runLoopInstance.setTimeout(function() {
+          didItHappen = true;
+        }, 5);
+        runLoopInstance.play();
+      });
+      
+      waitsFor(function() {
+        return didItHappen;
+      }, 1000);
+      
+      runs(function() {
+        expect(didItHappen).toBe(true);
       });
       
     });

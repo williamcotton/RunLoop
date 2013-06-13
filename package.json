@@ -2,6 +2,7 @@
   "name": "RunLoop",
   "version": "0.8.0",
   "devDependencies": {
-    "karma": "*"
+    "karma": "*",
+    "phantomjs": "*"
   }
 }
