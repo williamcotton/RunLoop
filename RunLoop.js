@@ -69,7 +69,7 @@ window.requestAnimationFrame = (function(callback) {
       var runScheduledEvents = function(context, tick) {
         var previousEvents = scheduledEvents;
         scheduledEvents.forEach(function(scheduledEvent) {
-          if (tick > scheduledEvent.fire_at) {
+          if (tick >= scheduledEvent.fire_at) {
             scheduledEvent.callback(context, tick);
             if (scheduledEvent.repeat) {
               scheduledEvent.fire_at += scheduledEvent.elapsed_ticks;
