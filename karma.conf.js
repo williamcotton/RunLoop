@@ -13,7 +13,6 @@ files = [
   REQUIRE,
   REQUIRE_ADAPTER,
   
-  
   {pattern: 'test/**/*Spec.js', included: false},
   {pattern: '*.js', included: false},
   
