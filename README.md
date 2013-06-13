@@ -43,16 +43,16 @@ function(RunLoop) {
 });
 ```
 
-### Testing
+### Tests
 
-This project is using the Karma test runner and the tests are written in Jasmine.
+This project uses RequireJS, Karma, and Jasmine.
 
 To set it all up:
 ```
 npm install
 ```
 
-It uses PhantomJS by default, so you might need to [follow these instructions](http://karma-runner.github.io/0.8/config/browsers.html).
+Karma runs using PhantomJS by default, so you might need to [follow these instructions](http://karma-runner.github.io/0.8/config/browsers.html).
 
 Then:
 ```
