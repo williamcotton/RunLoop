@@ -45,6 +45,8 @@ function(RunLoop) {
 
 ### Tests
 
+[![Build Status](https://travis-ci.org/williamcotton/RunLoop.png)](https://travis-ci.org/williamcotton/RunLoop)
+
 This project uses RequireJS, Karma, and Jasmine.
 
 To set it all up:
