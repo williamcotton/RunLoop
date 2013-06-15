@@ -18,7 +18,7 @@ define(["RunLoop"], function(RunLoop) {
       
       runs(function() {
         RunLoop(canvas, function(ctx, tick) {
-          expect(ctx).not.toBeDefined();
+          expect(ctx).toBeDefined();
         }).play();
       });
       
