@@ -60,3 +60,7 @@ Then:
 ```
 karma start
 ```
+
+### Thoughts
+
+This is a really small library that has a lot of weight on it... git, karma, requirejs, jasmine, bower, node, travis... it's a lot of setup to just share a simple little guy like this!
