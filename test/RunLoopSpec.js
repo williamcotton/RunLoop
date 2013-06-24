@@ -47,7 +47,7 @@ define(["RunLoop"], function(RunLoop) {
   describe("ticks, tickscale, and step", function() {
     
     it("should get the default tickscale of 1", function() {
-      expect(runLoopInstance.getTickscale()).toBe(1);
+      expect(runLoopInstance.getTickscale()).toBe(10);
     });
     
     it("should get the update the tickscale", function() {
